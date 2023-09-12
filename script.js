@@ -60,4 +60,22 @@ document.getElementById("homeButton").addEventListener("click", function () {
 // Beim Laden der Seite den ausgewählten Abschnitt aus der SessionStorage laden
 loadSelectedSection();
 
+// Impressum-Modal
+var modalImp = document.getElementById("myImpressumModal");
+var btnImp = document.getElementById("myImpressumBtn");
+var spanImp = document.getElementById("impressum_close");
 
+btnImp.onclick = function () {
+  modalImp.style.display = "flex";
+  modalImp.style.justifyContent = "center";
+};
+
+spanImp.onclick = function () {
+  modalImp.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modalImp) {
+    modalImp.style.display = "none";
+  }
+};
