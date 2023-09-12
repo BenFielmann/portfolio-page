@@ -1,0 +1,122 @@
+/* CSS-Regel für die basis strucktur */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+}
+
+.side_alignment_heade_footer {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: inherit;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 80%;
+  width: 12.5rem;
+  background-color: antiquewhite;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 12.5rem;
+  height: 20%;
+  background-color: antiquewhite;
+}
+/* CSS-Regel für das Container-Div */
+
+#container {
+  width: 100%;
+  position: relative; /* Positionierung für Sections */
+}
+
+/* CSS-Regel für die Sections */
+section {
+  position: absolute; /* Positionierung der Sections */
+  top: 0; /* Sections oben ausrichten */
+  left: 0; /* Sections links ausrichten */
+  opacity: 0; /* Standardmäßig alle Sections ausblenden */
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  width: inherit;
+  height: 100%;
+  transition: opacity 1s ease-in-out; /* Übergangseffekt: 0,5 Sekunden, sanftes Ein- und Ausblenden */
+}
+.visible {
+  opacity: 1; /* Klasse 'visible' zeigt den Abschnitt an */
+}
+
+/* Farben für die Sections */
+#section1 {
+  background-color: red;
+}
+#section2 {
+  background-color: green;
+}
+#section3 {
+  background-color: blue;
+}
+#section4 {
+  background-color: rgb(90, 90, 17);
+}
+#section5 {
+  background-color: purple;
+}
+#section6 {
+  background-color: orange;
+}
+
+/* CSS-Regel für das Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #fefefe;
+  width: 100%;
+  width: 600px;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+  overflow-y: scroll;
+  height: 85vh;
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
