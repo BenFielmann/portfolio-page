@@ -38,6 +38,8 @@ for (var i = 2; i <= 6; i++) {
         });
         // Zielabschnitt anzeigen
         targetSection.style.opacity = "1";
+        // Aktiven Button markieren
+        markActiveButton(index);
         // Ausgewählten Abschnitt in der SessionStorage speichern
         saveSelectedSection(index);
       };
@@ -53,12 +55,26 @@ document.getElementById("homeButton").addEventListener("click", function () {
   });
   // Startabschnitt anzeigen (Section 1)
   document.getElementById("section1").style.opacity = "1";
+  // Aktiven Button markieren
+  markActiveButton(0);
   // Ausgewählten Abschnitt in der SessionStorage löschen
   sessionStorage.removeItem("selectedSection");
 });
 
 // Beim Laden der Seite den ausgewählten Abschnitt aus der SessionStorage laden
 loadSelectedSection();
+
+// Funktion zur Markierung des aktiven Buttons
+function markActiveButton(index) {
+  // Alle Buttons auf den normalen Stil zurücksetzen
+  var buttons = document.querySelectorAll(".side_buttons");
+  buttons.forEach(function (button) {
+    button.classList.remove("active-button");
+  });
+
+  // Den ausgewählten Button markieren
+  buttons[index].classList.add("active-button");
+}
 
 // Impressum-Modal
 var modalImp = document.getElementById("myImpressumModal");
