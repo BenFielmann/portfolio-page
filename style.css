@@ -87,7 +87,7 @@ section {
   text-align: center;
   width: inherit;
   height: 100%;
-  transition: opacity 1s ease-in-out; /* Übergangseffekt: 0,5 Sekunden, sanftes Ein- und Ausblenden */
+  transition: opacity 1s ease-in-out; /* Übergangseffekt: 1 Sekunde, sanftes Ein- und Ausblenden */
 }
 .visible {
   opacity: 1; /* Klasse 'visible' zeigt den Abschnitt an */
