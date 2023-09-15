@@ -32,18 +32,24 @@ body {
   text-align: center;
 }
 
-img {
-  width: inherit;
-  height: auto;
-}
-
-header {
+/* CSS-Regeln für die Buttons */
+.side_buttons_alignment {
+  height: 30vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  height: 80%;
-  width: 12.5rem;
-  background-color: rgba(9, 3, 45, 0.576);
+  justify-content: space-evenly;
+}
+
+.side_buttons {
+  background-color: transparent;
+  color: rgb(158, 158, 158);
+  border: none;
+  transition: color 0.3s; /* Übergangseffekt für die Textfarbe */
+}
+
+/* CSS-Regel für den aktiven Button */
+.side_buttons.active-button {
+  color: white;
 }
 footer {
   display: flex;
