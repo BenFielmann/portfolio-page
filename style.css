@@ -138,6 +138,16 @@ section {
   background-color: rgba(36, 83, 86, 0.88);
 }
 
+.test_div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-repeat: no-repeat;
+  width: 1000px;
+  height: 500px;
+  background-image: url(img/blahhh\ 1.jpg);
+}
+
 /* CSS-Regel für das Modal */
 .modal {
   display: none;
