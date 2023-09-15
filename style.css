@@ -72,14 +72,26 @@ img {
 .side_buttons.active-button {
   color: white;
 }
+
+/* CSS-Regel für den footer */
 footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 12.5rem;
   height: 20%;
-  background-color: rgba(9, 3, 45, 0.576);
+  width: inherit;
+  text-align: center;
 }
+
+footer div {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer p {
+  color: lightgray;
+}
+
 /* CSS-Regel für das Container-Div */
 
 #container {
