@@ -23,17 +23,28 @@ body {
   background-repeat: no-repeat;
 }
 
+/* CSS-Regel für den header */
+header {
   display: flex;
   flex-direction: column;
-}
-.test {
+  justify-content: flex-start;
+  height: 80%;
   width: inherit;
 }
 
-.test h3 {
+.img_box {
+  width: inherit;
+}
+
+img {
+  width: inherit;
+  height: auto;
+}
+
+.img_box h3 {
   position: absolute;
-  bottom: 660px;
-  z-index: 2;
+  top: 25.5%;
+  z-index: 1;
   color: white;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   background-color: #0069e1aa;
