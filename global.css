@@ -1,0 +1,11 @@
+:root {
+  --global-color-background: linear-gradient(
+      162.48deg,
+      #2e2e2e 28.7%,
+      rgba(43, 46, 72, 0.744792) 107.5%,
+      rgba(62, 26, 26, 0.78) 184.68%,
+      rgba(41, 36, 36, 0.192708) 252.67%,
+      rgba(41, 36, 36, 0.69) 337.44%
+    ),
+    linear-gradient(0deg, #e3e3e3, #e3e3e3);
+}
