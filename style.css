@@ -14,7 +14,15 @@ body {
   display: flex;
 }
 
-.side_alignment_heade_footer {
+/* CSS-Regel für den linken Seitenbereich */
+.side_alignment_header_footer {
+  display: flex;
+  flex-direction: column;
+  width: 12.5rem;
+  background: var(--global-color-background);
+  background-repeat: no-repeat;
+}
+
   display: flex;
   flex-direction: column;
 }
