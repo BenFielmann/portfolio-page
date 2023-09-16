@@ -33,20 +33,20 @@ header {
   width: inherit;
 }
 
-.test_div {
+.selfie_frame {
   display: flex;
   align-items: flex-end;
   justify-content: center;
   background-repeat: no-repeat;
   width: inherit;
   height: 35%;
-  background-size:100% 100%;
+  background-size: 100% 100%;
   background-image: url(Selfie.jpg);
 }
 
-
-
-.test_div h3 {
+.selfie_frame h3 {
+  font-family: var(--global-secondary-font-family-bold);
+  font-size: 1.1rem;
   color: white;
   padding: 5px;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
@@ -62,6 +62,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 .side_buttons {
