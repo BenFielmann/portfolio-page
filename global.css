@@ -13,15 +13,15 @@
 
   --global-primary-font-family: Roboto;
 
-  --global-secondary-font-family: OrbitronBold;
+  --global-secondary-font-family-bold: OrbitronBold;
 
   --global-secondary-font-family-regular: OrbitronRegular;
 
-  --global-font-size: 0.875rem;
+  --global-font-size: 1em;
 
-  --global-menu-font-size: 0.75rem;
+  --global-menu-font-size: 1rem;
 
-  --global-footer-font-size: 0.7rem;
+  --global-footer-font-size: 1rem;
 }
 
 @font-face {
