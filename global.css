@@ -8,4 +8,33 @@
       rgba(41, 36, 36, 0.69) 337.44%
     ),
     linear-gradient(0deg, #e3e3e3, #e3e3e3);
+
+  --global-text-color: #e3e3e3;
+
+  --global-primary-font-family: Roboto;
+
+  --global-secondary-font-family: OrbitronBold;
+
+  --global-secondary-font-family-regular: OrbitronRegular;
+
+  --global-font-size: 0.875rem;
+
+  --global-menu-font-size: 0.75rem;
+
+  --global-footer-font-size: 0.7rem;
+}
+
+@font-face {
+  font-family: OrbitronBold;
+  src: url(fonts/Orbitron-Bold.ttf);
+}
+
+@font-face {
+  font-family: OrbitronRegular;
+  src: url(fonts/Orbitron-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
 }
