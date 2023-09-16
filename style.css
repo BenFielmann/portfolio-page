@@ -33,20 +33,22 @@ header {
   width: inherit;
 }
 
-.img_box {
+.test_div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-repeat: no-repeat;
   width: inherit;
+  height: 35%;
+  background-size:100% 100%;
+  background-image: url(Selfie.jpg);
 }
 
-img {
-  width: inherit;
-  height: auto;
-}
 
-.img_box h3 {
-  position: absolute;
-  top: 25.5%;
-  z-index: 1;
+
+.test_div h3 {
   color: white;
+  padding: 5px;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   background-color: #0069e1aa;
   width: inherit;
@@ -137,16 +139,6 @@ section {
 }
 #section6 {
   background-color: rgba(36, 83, 86, 0.88);
-}
-
-.test_div {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  background-repeat: no-repeat;
-  width: 1000px;
-  height: 500px;
-  background-image: url(img/blahhh\ 1.jpg);
 }
 
 /* CSS-Regel für das Modal */
