@@ -56,6 +56,21 @@ header {
   text-align: center;
 }
 
+/* CSS-Regeln für die Icon Buttons */
+.button_icon_flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* CSS-Regeln für die Icon Buttons */
+.side_buttons_icons_alignment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 30vh;
+}
+
 /* CSS-Regeln für die Buttons */
 .side_buttons_alignment {
   height: 30vh;
