@@ -1,0 +1,14 @@
+# Testing Ideas for other branches
+# ________________________________
+
+# Ignoriere Test.html
+Test.html
+test.html
+# Ignoriere Test.css
+Test.css
+test.css
+# Ignoriere Test.js
+Test.js
+test.js
+# Ignoriere den Ordner test
+test/
