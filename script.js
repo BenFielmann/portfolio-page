@@ -77,3 +77,29 @@ function markActiveButton(index) {
 }
 
 // Impressum-Modal
+const openModalBtn = document.getElementById("openModalBtn");
+const closeModalBtn = document.getElementById("closeModalBtn");
+const modal = document.getElementById("modal");
+
+openModalBtn.addEventListener("click", () => {
+  modal.style.display = "block";
+  setTimeout(() => {
+    modal.classList.add("open");
+  }, 10);
+});
+
+closeModalBtn.addEventListener("click", () => {
+  modal.classList.remove("open");
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 300);
+});
+
+modal.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.classList.remove("open");
+    setTimeout(() => {
+      modal.style.display = "none";
+    }, 300);
+  }
+});
