@@ -164,3 +164,31 @@ section {
 #section6 {
   background-color: rgba(36, 83, 86, 0.88);
 }
+
+/* CSS-Helper-Regeln */
+/* __________________________________________________________ */
+
+/* CSS-Regeln für links */
+a:link {
+  color: greenyellow;
+  text-decoration: none;
+  /* unvisited link */
+}
+
+a:visited {
+  color: red;
+  text-decoration: none;
+  /* visited link */
+}
+
+a:hover {
+  color: deepskyblue;
+  text-decoration: underline;
+  /* mouse over link */
+}
+
+a:active {
+  color: #9e9e9e;
+  text-decoration: underline;
+  /* selected link */
+}
