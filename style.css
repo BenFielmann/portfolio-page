@@ -104,8 +104,7 @@ footer {
 footer div {
   width: inherit;
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 0.5rem;
+  justify-content: space-evenly;
 }
 
 footer p {
