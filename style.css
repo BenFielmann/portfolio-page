@@ -78,6 +78,7 @@ header {
   color: #9e9e9e;
   border: none;
   transition: color 0.3s; /* Übergangseffekt für die Textfarbe */
+  font-family: var(--global-secondary-font-family-bold);
 }
 .side_buttons img {
   margin-right: 15px;
@@ -90,6 +91,7 @@ header {
 
 /* CSS-Regel für den footer */
 footer {
+  font-family: var(--global-secondary-font-family-bold);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
