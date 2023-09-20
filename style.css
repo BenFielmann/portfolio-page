@@ -114,6 +114,14 @@ footer {
   cursor: pointer;
 }
 
+.social_hover img:hover,
+.social_hover img:focus {
+  background-color: rgba(172, 255, 47, 0.212);
+  border-radius: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 footer div {
   width: inherit;
   display: flex;
