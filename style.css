@@ -175,8 +175,12 @@ footer button {
   color: #9e9e9e;
 }
 
-.imp_mail {
+.imp_contact {
   font-size: 1.2rem;
+}
+
+.hr_contact {
+  width: 12.5rem;
 }
 
 /* CSS-Regeln für die Modal Scrollbar */
