@@ -13,9 +13,7 @@
 
   --global-primary-font-family: Roboto;
 
-  --global-secondary-font-family-bold: OrbitronBold;
-
-  --global-secondary-font-family-regular: OrbitronRegular;
+  --global-secondary-font-family: BlackOpsOneMulti;
 
   --global-font-size: 1em;
 
@@ -25,13 +23,8 @@
 }
 
 @font-face {
-  font-family: OrbitronBold;
-  src: url(fonts/Orbitron-Bold.ttf);
-}
-
-@font-face {
-  font-family: OrbitronRegular;
-  src: url(fonts/Orbitron-Regular.ttf);
+  font-family: BlackOpsOneMulti;
+  src: url(fonts/BlackOpsOne-Regular.ttf);
 }
 
 @font-face {
