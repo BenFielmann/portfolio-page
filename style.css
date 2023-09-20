@@ -46,12 +46,13 @@ header {
 }
 
 .selfie_frame h3 {
-  font-family: var(--global-secondary-font-family-bold);
-  font-size: 1.1rem;
-  color: white;
+  font-weight: lighter;
+  font-size: 1.163rem;
+  font-family: var(--global-secondary-font-family);
+  color: greenyellow;
   padding: 0.313rem;
   text-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.5);
-  background-color: #0069e1aa;
+  background-color: rgba(0, 0, 0, 0.618);
   width: inherit;
   height: 2rem;
   text-align: center;
@@ -79,8 +80,9 @@ header {
   color: #9e9e9e;
   border: none;
   transition: color 0.3s; /* Übergangseffekt für die Textfarbe */
-  font-family: var(--global-secondary-font-family-bold);
-  font-size: 0.8rem;
+  font-family: var(--global-secondary-font-family);
+  font-size: 1rem;
+  font-weight: lighter;
 }
 .side_buttons img {
   margin-right: 0.938rem;
@@ -88,7 +90,7 @@ header {
 
 /* CSS-Regel für den aktiven Button */
 .side_buttons.active-button {
-  color: #0069e1aa;
+  color: greenyellow;
 }
 
 /* CSS-Regel für den footer */
@@ -105,7 +107,7 @@ footer {
 
 .side_buttons:hover,
 .side_buttons:focus {
-  color: #0069e1aa;
+  color: greenyellow;
   text-decoration: none;
   cursor: pointer;
 }
@@ -179,7 +181,7 @@ footer button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0069e1aa;
+  background: greenyellow;
   border-radius: 2rem;
   /* Handle */
 }
@@ -262,7 +264,7 @@ section {
 
 /* CSS-Regeln für links */
 a:link {
-  color: #0069e1aa;
+  color: greenyellow;
   text-decoration: none;
   /* unvisited link */
 }
