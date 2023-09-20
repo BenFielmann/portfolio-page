@@ -88,7 +88,7 @@ header {
 
 /* CSS-Regel für den aktiven Button */
 .side_buttons.active-button {
-  color: white;
+  color: #0069e1aa;
 }
 
 /* CSS-Regel für den footer */
@@ -101,6 +101,13 @@ footer {
   height: 20%;
   width: inherit;
   text-align: center;
+}
+
+.side_buttons:hover,
+.side_buttons:focus {
+  color: #0069e1aa;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 footer div {
@@ -133,6 +140,7 @@ footer button {
 }
 
 .modal_content {
+  scroll-behavior: smooth;
   background-color: #fff;
   width: 600px;
   margin: 0 auto;
@@ -155,6 +163,10 @@ footer button {
   color: #9e9e9e;
 }
 
+.imp_mail {
+  font-size: 1.2rem;
+}
+
 /* CSS-Regeln für die Modal Scrollbar */
 ::-webkit-scrollbar {
   width: 0.5rem;
@@ -167,7 +179,7 @@ footer button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: greenyellow;
+  background: #0069e1aa;
   border-radius: 2rem;
   /* Handle */
 }
@@ -250,7 +262,7 @@ section {
 
 /* CSS-Regeln für links */
 a:link {
-  color: greenyellow;
+  color: #0069e1aa;
   text-decoration: none;
   /* unvisited link */
 }
