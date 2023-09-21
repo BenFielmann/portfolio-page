@@ -42,22 +42,22 @@ header {
   justify-content: center;
   background-repeat: no-repeat;
   width: inherit;
-  height: 15.625rem;
+  height: 14rem;
   background-position-y: bottom;
   background-size: 100% auto;
   background-image: url(Selfie.jpg);
 }
 
-.selfie_frame h3 {
+.selfie_frame h2 {
   font-weight: lighter;
-  font-size: 1.45rem;
+  font-size: 1.2rem;
   font-family: var(--global-secondary-font-family);
   color: greenyellow;
   background-color: rgba(0, 0, 0, 0.618);
   width: inherit;
   padding: 0.2rem 0 0.2rem 0;
   text-align: center;
-  letter-spacing: 0.5pt;
+  letter-spacing: 0.8pt;
 }
 
 /* CSS-Regeln für den Button Container */
