@@ -20,6 +20,7 @@ body {
   font-size: 0.8rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 12rem;
   background: var(--global-color-background);
   background-repeat: no-repeat;
@@ -113,15 +114,16 @@ footer {
   text-decoration: none;
   cursor: pointer;
 }
-
-.social_hover img:hover,
-.social_hover img:focus {
-  background-color: rgba(172, 255, 47, 0.212);
-  border-radius: 2rem;
+/* dfdsaf */
+#social_hover:hover,
+#social_hover:focus {
+  /* background-color: rgba(172, 255, 47, 0.212);
+  border-radius: 2rem; */
+  fill: greenyellow;
   text-decoration: none;
   cursor: pointer;
 }
-
+/* dfdsaf */
 footer div {
   width: inherit;
   display: flex;
