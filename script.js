@@ -69,11 +69,11 @@ function markActiveButton(index) {
   // Alle Buttons auf den normalen Stil zurücksetzen
   var buttons = document.querySelectorAll(".side_buttons");
   buttons.forEach(function (button) {
-    button.classList.remove("active-button");
+    button.classList.remove("active_button");
   });
 
   // Den ausgewählten Button markieren
-  buttons[index].classList.add("active-button");
+  buttons[index].classList.add("active_button");
 }
 
 // Impressum-Modal

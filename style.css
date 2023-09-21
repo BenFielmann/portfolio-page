@@ -88,17 +88,17 @@ header {
   letter-spacing: 0.5pt;
 }
 .side_buttons img {
-  margin-right: 0.938rem;
+  margin-right: 0.8rem;
 }
 
 /* CSS-Regel für den aktiven Button */
-.side_buttons.active-button {
+.side_buttons.active_button {
   color: greenyellow;
 }
 
 /* CSS-Regel für den footer */
 footer {
-  font-family: var(--global-secondary-font-family-bold);
+  font-family: var(--global-primary-font-family);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -121,15 +121,15 @@ footer div {
   justify-content: space-evenly;
 }
 
-.social-icon {
+.social_icon {
   width: 18.65px;
   height: 20px;
   fill: #9e9e9e; /* Standard-Füllfarbe */
   transition: fill 0.3s ease; /* Animationsübergang für die Füllfarbe */
 }
 
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
+.social_link:hover .social_icon,
+.social_link:focus .social_icon {
   fill: greenyellow; /* Füllfarbe bei Hover oder Fokus */
 }
 
