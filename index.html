@@ -4,43 +4,139 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>B.Fielmann Portfolio</title>
+    <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="side_alignment_heade_footer">
+    <div class="side_alignment_header_footer">
       <header>
-        <img src="Selfie.jpg" alt="me" />
-        <h3>Benjamin Fielmann</h3>
-
-        <!-- Button, um zur Startseite zurückzukehren -->
-        <button id="homeButton">🏠Home</button>
-
-        <!-- Buttons für die anderen Abschnitte -->
-        <button id="button2">🧑‍🦰ABOUT ME</button>
-        <button id="button3">🖥️RESUME</button>
-        <button id="button4">💼PORTFOLIO</button>
-        <button id="button5">📝BLOG</button>
-        <button id="button6">📫CONTACT</button>
+        <div class="selfie_frame">
+          <h2>Ben Fielmann</h2>
+        </div>
+        <div class="button_container_flex">
+          <div>
+            <!-- Button, um zur Startseite zurückzukehren -->
+            <button class="side_buttons" id="homeButton">
+              <img src="/icons/homeIcon.svg" alt="" />Home
+            </button>
+            <!-- Buttons für die anderen Abschnitte -->
+            <button class="side_buttons" id="button2">
+              <img src="/icons/userIcon.svg" alt="" />ABOUT ME
+            </button>
+            <button class="side_buttons" id="button3">
+              <img src="/icons/cvIcon.svg" alt="" />RESUME
+            </button>
+            <button class="side_buttons" id="button4">
+              <img src="/icons/briefCaseIcon.svg" alt="" />PORTFOLIO
+            </button>
+            <button class="side_buttons" id="button5">
+              <img src="/icons/blogIcon.svg" alt="" />BLOG
+            </button>
+            <button class="side_buttons" id="button6">
+              <img src="/icons/newMailIcon.svg" alt="" />CONTACT
+            </button>
+          </div>
+        </div>
       </header>
-
       <footer>
         <div>
-          <a href="">🐲</a>
-          <a href="">🐲</a>
-          <a href="">🐲</a>
-          <a href="">🐲</a>
-          <a href="">🐲</a>
+          <a
+            class="social_link xing"
+            href="https://www.xing.com/profile/Benjamin_Fielmann/cv"
+            target="_blank"
+          >
+            <svg
+              class="social_icon"
+              width="18.65"
+              height="20"
+              fill="#9e9e9e"
+              viewBox="0 0 25 26"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.7997 6.34662C7.71396 6.14533 7.5717 5.97322 7.39015 5.85113C7.2086 5.72903 6.99555 5.66218 6.77678 5.65868H3.15585C3.06074 5.65328 2.96574 5.67105 2.87902 5.71047C2.79229 5.74988 2.71644 5.80977 2.65797 5.88497C2.60958 5.97058 2.58415 6.06724 2.58415 6.16558C2.58415 6.26391 2.60958 6.36058 2.65797 6.44618L5.12926 10.7277L1.23675 17.5981C1.18565 17.6827 1.15864 17.7798 1.15864 17.8787C1.15864 17.9776 1.18565 18.0746 1.23675 18.1593C1.28532 18.2398 1.35463 18.3058 1.43743 18.3504C1.52024 18.395 1.61350 18.4165 1.70747 18.4127H5.32841C5.54541 18.4059 5.75560 18.3353 5.93271 18.2098C6.10981 18.0842 6.24597 17.9092 6.32416 17.7067L10.271 10.7277L7.7997 6.34662ZM22.6546 1.44957C22.7013 1.36343 22.7258 1.26697 22.7258 1.16896C22.7258 1.07095 22.7013 0.974498 22.6546 0.888355C22.6011 0.81173 22.5290 0.749943 22.4451 0.708781C22.3612 0.667618 22.2682 0.648428 22.1748 0.653007H18.4815C18.2677 0.659043 18.0606 0.728548 17.8865 0.85267C17.7124 0.976792 17.5792 1.14992 17.5038 1.35C17.5038 1.35 9.62827 15.317 9.3567 15.7696L14.5527 25.3012C14.6374 25.5021 14.7779 25.6746 14.9576 25.7981C15.1373 25.9216 15.3487 25.9910 15.5666 25.9982H19.1875C19.2826 26.0062 19.3781 25.9886 19.4641 25.9472C19.55 25.9058 19.6233 25.8421 19.6764 25.7628C19.7256 25.6775 19.7516 25.5807 19.7516 25.4822C19.7516 25.3837 19.7256 25.2869 19.6764 25.2016L14.5256 15.7877L22.6546 1.44957Z"
+              />
+            </svg>
+          </a>
+          <a
+            class="social_link linkedIn"
+            href="https://www.linkedin.com/in/benjamin-fielmann-b1687a222?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B7jHbd4P0SISpr%2Fq59P0s4g%3D%3D"
+            target="_blank"
+          >
+            <svg
+              class="social_icon"
+              width="18.65"
+              height="20"
+              fill="#9e9e9e"
+              viewBox="0 0 25 26"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.79343 2.31843C5.79313 2.93301 5.54868 3.52229 5.11386 3.95665C4.67905 4.391 4.08949 4.63485 3.47488 4.63454C2.86026 4.63424 2.27095 4.3898 1.83657 3.95501C1.40219 3.52022 1.15833 2.93069 1.15863 2.31611C1.15894 1.70153 1.40339 1.11225 1.8382 0.677894C2.27302 0.243538 2.86258 -0.000306999 3.47719 2.90078e-07C4.09181 0.000307579 4.68112 0.244743 5.1155 0.679533C5.54988 1.11432 5.79374 1.70385 5.79343 2.31843ZM5.86296 6.35048H1.22816V20.8566H5.86296V6.35048ZM13.1859 6.35048H8.57431V20.8566H13.1396V13.2444C13.1396 9.00376 18.6666 8.60982 18.6666 13.2444V20.8566H23.2435V11.6686C23.2435 4.51984 15.063 4.78632 13.1396 8.29699L13.1859 6.35048Z"
+              />
+            </svg>
+          </a>
+          <a
+            class="social_link twitter_x"
+            href="https://github.com/BenFielmann"
+            target="_blank"
+          >
+            <svg
+              class="social_icon gitHub"
+              width="18.65"
+              height="20"
+              fill="#9e9e9e"
+              viewBox="0 0 19 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M17.0317 9.28895C17.0674 9.21251 17.1098 9.13437 17.1183 9.12588C17.137 9.11059 17.1523 9.04605 17.154 8.9832C17.154 8.94922 17.1812 8.76238 17.205 8.6129C17.2219 8.51607 17.2389 8.40906 17.2593 8.29865C17.3374 7.8706 17.3638 7.44085 17.3655 6.58559C17.3672 5.26066 17.2958 4.89546 16.8644 4.01727C16.7014 3.67892 16.4944 3.36364 16.2486 3.07963C16.4584 2.45963 16.4525 1.50161 16.2359 0.66079C16.0575 -0.0288512 15.9938 -0.0730151 15.3696 0.0594775C14.8388 0.172436 14.4141 0.326161 13.8697 0.600489C13.6115 0.730434 13.2565 0.931721 12.9992 1.09139C12.3282 0.856132 11.6343 0.700708 10.8929 0.615776C10.1429 0.530845 8.30247 0.578407 7.6485 0.699009C7.01152 0.817913 6.43568 0.962296 5.9159 1.13216C5.65516 0.972488 5.27892 0.755913 5.00884 0.620023C4.46188 0.344846 4.03723 0.19197 3.50556 0.0790117C2.88216 -0.0543303 2.81761 -0.0093168 2.63926 0.680324C2.41844 1.53218 2.41674 2.50634 2.63501 3.12464C2.66049 3.19514 2.67578 3.24525 2.68173 3.28431C1.79674 4.39861 1.50798 5.6454 1.69992 7.38649C1.75088 7.83917 1.82732 8.25534 1.93603 8.63668C1.99548 8.83796 2.08721 9.11144 2.16364 9.29404H2.1594C2.5331 10.1603 3.12846 10.861 3.9421 11.3791C4.4398 11.695 5.2373 12.0203 5.63903 12.0713C5.74944 12.0849 6.07048 12.1511 6.35245 12.2174C6.63527 12.2836 7.18817 12.383 7.58055 12.4399H7.58905L7.56866 12.4535C7.09305 12.6998 6.7839 13.0854 6.57497 13.6909C6.48154 13.719 6.36604 13.7572 6.24034 13.8013C5.79021 13.9542 5.6161 13.9848 5.16171 13.9882C4.68865 13.9916 4.57569 13.9712 4.29542 13.8387C3.8608 13.625 3.49694 13.2906 3.24737 12.8756C2.82271 12.1741 2.08636 11.6781 1.47231 11.6781C0.949129 11.6781 0.84976 11.8904 1.22855 12.2004C1.79929 12.6675 2.22564 13.1431 2.4006 13.5066L2.73778 14.2065C2.8312 14.3993 3.02824 14.6608 3.21679 14.8417C3.66013 15.2647 4.08818 15.4668 4.72687 15.562C5.15492 15.6248 5.26023 15.6248 5.76558 15.5603C6.00933 15.5305 6.21571 15.4957 6.39916 15.4524V16.1777C6.39916 17.6776 6.38218 18.16 6.32272 18.301C6.20977 18.5694 5.95752 18.8446 5.71377 18.9694C5.47001 19.0943 5.39443 19.231 5.49719 19.3567C5.55495 19.4246 5.66451 19.4365 6.03226 19.4127C6.73039 19.3703 7.22384 19.1112 7.47609 18.6569C7.55592 18.5099 7.57461 18.2152 7.60009 16.6865C7.62727 15.0286 7.63916 14.8689 7.74702 14.6311C7.81157 14.491 7.90584 14.3381 7.95935 14.2965C8.04683 14.2235 8.05277 14.3678 8.05277 16.3518C8.05277 18.5414 8.02984 18.8063 7.81072 19.2267C7.76146 19.3227 7.66803 19.4476 7.60264 19.507C7.48798 19.6115 7.43957 19.879 7.5194 19.9597C7.65105 20.0905 8.31096 19.885 8.67107 19.6013C9.28427 19.1155 9.35732 18.7138 9.36241 15.8134L9.36496 14.1105L9.55181 14.1275L9.73696 14.1445L9.76753 16.3697C9.80151 18.8768 9.8066 18.9134 10.233 19.3975C10.475 19.6709 10.7188 19.8221 11.1162 19.941C11.6462 20.0998 11.8059 19.8535 11.4492 19.4263C11.061 18.9609 11.0415 18.7834 11.0636 16.0333C11.078 14.2702 11.078 14.2702 11.191 14.3729C11.4313 14.5904 11.4772 14.9471 11.4772 16.6007C11.4772 18.6543 11.5366 18.8497 12.2611 19.2081C12.6008 19.3737 12.6943 19.3949 13.1291 19.3949C13.5911 19.3975 13.6192 19.3907 13.6361 19.2701C13.6506 19.1724 13.5937 19.1061 13.378 18.9745C13.1117 18.8173 12.9014 18.5806 12.7766 18.2976C12.7299 18.1906 12.6985 17.484 12.6773 16.0299C12.6467 13.9967 12.6399 13.9041 12.5134 13.5856C12.3435 13.1576 12.0819 12.8195 11.7515 12.5953C11.6666 12.5393 11.58 12.4934 11.4687 12.4577C11.6046 12.4441 11.7379 12.4297 11.8662 12.411C13.2013 12.2327 13.9071 12.0849 14.4736 11.8658C15.6711 11.4046 16.4822 10.6385 16.9213 9.55224C16.9604 9.45541 16.9994 9.36369 17.0317 9.28895ZM13.8408 10.7684C14.2867 10.5493 14.8388 9.99048 15.0367 9.55563L15.0384 9.55478C15.2532 9.08681 15.3662 8.39292 15.3356 7.73895C15.3135 7.26419 15.283 7.1334 15.1301 6.82594C14.7904 6.138 14.2239 5.62162 13.6039 5.42968C13.2089 5.30737 12.1397 5.29548 10.5379 5.3974C9.86181 5.43987 9.30211 5.43987 8.62521 5.3974C7.09475 5.29888 5.95497 5.30907 5.58297 5.42288C5.13963 5.55877 4.76254 5.8263 4.40583 6.25945C4.0126 6.73507 3.86227 7.1266 3.8283 7.75C3.77734 8.74624 4.0746 9.55563 4.71158 10.1518C5.38508 10.7795 6.2964 11.0929 7.92453 11.2526C8.41628 11.301 11.3948 11.2848 11.9299 11.2305C12.7112 11.1506 13.4009 10.9859 13.8408 10.7684Z"
+              />
+              <path
+                d="M6.95971 6.74781C6.0484 6.58814 5.52777 8.14917 6.22675 8.94498C6.55798 9.32207 6.85269 9.38407 7.22045 9.15476C7.56272 8.94243 7.74702 8.54325 7.74702 8.02687C7.74702 7.33723 7.43447 6.83104 6.95886 6.74611L6.95971 6.74781Z"
+              />
+              <path
+                d="M12.4913 6.84123C11.58 6.68156 11.0585 8.24005 11.7575 9.03755C12.0913 9.4155 12.386 9.47919 12.7546 9.24733C13.0943 9.035 13.2811 8.63583 13.2811 8.11945C13.2811 7.4332 12.9669 6.92531 12.4913 6.84123Z"
+              />
+              <path
+                d="M9.77008 9.42059C9.90852 9.29744 9.93994 9.04689 9.80745 8.9127C9.67496 8.77851 9.40573 8.79974 9.30041 8.94922C9.17726 9.12418 9.24266 9.25752 9.33014 9.39936C9.46603 9.50467 9.64863 9.52676 9.76923 9.41974L9.77008 9.42059Z"
+              />
+              <path
+                d="M10.0402 9.90895C10.0198 9.9718 9.92465 10.0652 9.82783 10.1153C9.58578 10.2402 9.41167 10.1969 9.15433 9.96245C8.99551 9.81977 8.92332 9.74418 8.87406 9.89451C8.82989 10.0338 9.11186 10.3132 9.33099 10.399C9.53142 10.4797 9.67496 10.4822 9.89153 10.3905C10.1081 10.3013 10.2967 10.0593 10.2967 9.90215C10.2967 9.75607 10.0869 9.76286 10.0393 9.91064L10.0402 9.90895Z"
+              />
+            </svg>
+          </a>
+          <a
+            class="social_link twitter_x"
+            href="https://twitter.com/BenFielmann"
+            target="_blank"
+          >
+            <svg
+              class="social_icon"
+              width="18.65"
+              height="20"
+              fill="#9e9e9e"
+              viewBox="0 0 25 26"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.0904 2H22.8074L14.6869 11.2812L24.24 23.9107H16.7589L10.9003 16.251L4.19675 23.9107H0.477541L9.16318 13.9835L0 2H7.66875L12.9644 9.00132L19.0882 2H19.0904ZM17.7859 21.6859H19.8455L6.55074 4.10792H4.34057L17.7859 21.6859Z"
+              />
+            </svg>
+          </a>
         </div>
-        <p>all right</p>
+        <p>Jr.Developer</p>
         <!-- Der Impressum-Button -->
-        <button class="modal_btn" id="myImpressumBtn">Impressum</button>
+        <button class="side_buttons" id="openModalBtn">Impressum</button>
       </footer>
     </div>
-
     <div id="container">
       <section id="section1" class="visible">
         <!-- Inhalt der ersten Section -->
-        <h2>🏠Home</h2>
+        <img src="icons/homeIcon.svg" alt="" />
+        <h1>Home</h1>
         <p>Dies ist der Inhalt der ersten Section.</p>
       </section>
       <section id="section2">
@@ -69,62 +165,55 @@
         <p>Dies ist der Inhalt der sechsten Section.</p>
       </section>
     </div>
-
     <!-- Das Impressum-Modal -->
-    <div id="myImpressumModal" class="modal">
-      <!-- Modal-Inhalt -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <span class="close" id="impressum_close">&times;</span>
-          <h2>Impressum</h2>
+    <div id="modal" class="modal">
+      <div class="modal_content">
+        <div class="modal_header">
+          <span id="closeModalBtn" class="close">&times;</span>
+          <h2>Impressum & Datenschutzerklärung</h2>
         </div>
-        <div class="modal-body">
-          <p>Hier ist der Inhalt Ihres Impressums.</p>
-          <h2>
-            Hier entsteht demnächst <br />
-            b-fielmann.de
-          </h2>
-
-          <br />
-
-          <h1>Impressum & Datenschutzerklärung</h1>
+        <div class="modal_inner">
+          <!-- Scrollbar-Inhalt hier einfügen -->
           <br />
           <h2>Impressum</h2>
           <p>
-            Angaben gemäß § 5 TMG: <br />
-            <br />
-            Benjamin Fielmann<br />
-            Greifenberger Straße 69B<br />
-            22147 Hamburg
+            Angaben gemäß § 5 TMG:
             <br />
             <br />
-            Kontakt: <br />
-            E-Mail: Benjamin-Fielmann@gmx.de
-
+            <a class="imp_contact" href="#imp_contact_data"
+              >Kontaktdaten Punkt 7</a
+            >
             <br />
             <br />
-
-            Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV: <br /><br />
-            Benjamin Fielmann<br />
-            Greifenberger Straße 69B<br />
-            22147 Hamburg
+            Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
             <br />
             <br />
-            Tätigkeitsbeschreibung: <br /><br />
+            <a class="imp_contact" href="#imp_contact_data"
+              >Kontaktdaten Punkt 7</a
+            >
+            <br />
+            <br />
+            Tätigkeitsbeschreibung:
+            <br />
+            <br />
             Diese Website dient dazu, Informationen über die beruflichen
             Qualifikationen und Fähigkeiten von Benjamin Fielmann zur Verfügung
             zu stellen. Es werden keine Dienstleistungen oder Produkte
             angeboten.
             <br />
             <br />
-            Haftungsausschluss:<br /><br />
-            Haftung für Inhalte<br />
+            Haftungsausschluss:
+            <br />
+            <br />
+            Haftung für Inhalte
+            <br />
             Die Inhalte unserer Website wurden mit größter Sorgfalt erstellt.
             Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte
             können wir jedoch keine Gewähr übernehmen.
             <br />
             <br />
-            Haftung für Links<br />
+            Haftung für Links
+            <br />
             Unsere Website enthält Links zu externen Websites Dritter, auf deren
             Inhalte wir keinen Einfluss haben. Für die Inhalte der verlinkten
             Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten
@@ -132,7 +221,8 @@
             externer Links.
             <br />
             <br />
-            Urheberrecht<br />
+            Urheberrecht
+            <br />
             Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
             diesen Seiten unterliegen dem deutschen Urheberrecht. Die
             Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
@@ -141,43 +231,54 @@
             Downloads und Kopien dieser Seite sind nur für den privaten, nicht
             kommerziellen Gebrauch gestattet.
           </p>
-
           <br />
-
-          <h2>Datenschutzerklärung</h2>
+          <hr />
+          <br />
+          <h2>Datenschutzerklärung:</h2>
           <p>
+            <br />
             Wir freuen uns über Ihr Interesse an unserer Website. Der Schutz
             Ihrer Privatsphäre ist für uns sehr wichtig. Nachstehend informieren
             wir Sie ausführlich über den Umgang mit Ihren Daten.
             <br />
             <br />
-            1. Zweck der Website<br /><br />
+            1. Zweck der Website
+            <br />
+            <br />
             Diese Website dient dazu, Informationen über die beruflichen
             Qualifikationen und Fähigkeiten von Benjamin Fielmann zur Verfügung
             zu stellen. Es werden keine Dienstleistungen oder Produkte
             angeboten.
             <br />
             <br />
-            2. Erhebung, Verarbeitung und Nutzung personenbezogener Daten<br /><br />
+            2. Erhebung, Verarbeitung und Nutzung personenbezogener Daten
+            <br />
+            <br />
             Wir erheben, speichern und verarbeiten Ihre personenbezogenen Daten
             nur, soweit dies für die ordnungsgemäße Bereitstellung unserer
             Dienste erforderlich ist oder wenn Sie uns Ihre ausdrückliche
             Zustimmung geben.
             <br />
             <br />
-            3. Keine Verwendung von Cookies<br /><br />
+            3. Keine Verwendung von Cookies
+            <br />
+            <br />
             Diese Website verwendet keine Cookies zur Erfassung von Nutzerdaten
             oder zur Verbesserung der Benutzererfahrung.
             <br />
             <br />
-            4. Disclaimer für externe Links<br /><br />
+            4. Disclaimer für externe Links
+            <br />
+            <br />
             Unsere Website enthält Links zu externen Websites Dritter. Bitte
             beachten Sie, dass wir keine Haftung für die Inhalte dieser externen
             Links übernehmen. Für die Inhalte der verlinkten Seiten ist stets
             der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
             <br />
             <br />
-            5. Urheberrecht<br /><br />
+            5. Urheberrecht
+            <br />
+            <br />
             Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
             diesen Seiten unterliegen dem deutschen Urheberrecht. Die
             Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
@@ -187,7 +288,9 @@
             kommerziellen Gebrauch gestattet.
             <br />
             <br />
-            6. Verfügbarkeit und Haftung<br /><br />
+            6. Verfügbarkeit und Haftung
+            <br />
+            <br />
             Verfügbarkeit: Wir bemühen uns nach bestem Wissen und Gewissen,
             unsere Website stets verfügbar zu halten. Bitte haben Sie jedoch
             Verständnis dafür, dass wir keine Garantie für die ununterbrochene
@@ -205,22 +308,36 @@
             zusätzliche Recherchen durchzuführen.
             <br />
             <br />
-            7. Kontakt<br /><br />
+            7. <span id="imp_contact_data">Kontakt:</span>
+            <br />
+            <br />
             Für Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer
             personenbezogenen Daten, für Auskünfte, Berichtigungen, Sperrung
             oder Löschung von Daten sowie zum Widerruf erteilter Einwilligungen
             wenden Sie sich bitte an:
             <br />
             <br />
-            Benjamin Fielmann<br />
-            Greifenberger Straße 69B<br />
-            22147 Hamburg<br />
-            E-Mail: Benjamin-Fielmann@gmx.de
+            Benjamin Fielmann
+            <br />
+            Greifenberger Straße 69B
+            <br />
+            22147 Hamburg
           </p>
+          <hr class="hr_contact" />
+          <br />
+          <br />
+          <a class="imp_contact" href="tel:+4940180409092"
+            >Telefon: +49 (0) 4060929925</a
+          >
+          <br />
+          <a class="imp_contact" href="mailto:Benjamin-Fielmann@gmx.de">
+            E-Mail: Benjamin-Fielmann@gmx.de</a
+          >
+          <hr />
+          <!-- Weitere Inhalte -->
         </div>
       </div>
     </div>
-
     <script src="script.js" defer></script>
   </body>
 </html>

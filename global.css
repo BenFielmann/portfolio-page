@@ -1,0 +1,39 @@
+:root {
+  --global-color-background: linear-gradient(
+      162.48deg,
+      #2e2e2e 28.7%,
+      rgba(43, 46, 72, 0.744792) 107.5%,
+      rgba(62, 26, 26, 0.78) 184.68%,
+      rgba(41, 36, 36, 0.192708) 252.67%,
+      rgba(41, 36, 36, 0.69) 337.44%
+    ),
+    linear-gradient(0deg, #e3e3e3, #e3e3e3);
+
+  --global-primary-text-color: #000000;
+
+  --global-primary-color: #ffffff;
+
+  --global-secondary-color: #9e9e9e;
+
+  --global-accent-color: greenyellow;
+
+  --global-primary-font-family: Roboto;
+
+  --global-secondary-font-family: BlackOpsOneMulti;
+
+  --global-font-size: 1em;
+
+  --global-secondary-font-size: 1.2rem;
+
+  --global-footer-font-size: 0.8rem;
+}
+
+@font-face {
+  font-family: BlackOpsOneMulti;
+  src: url(fonts/BlackOpsOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}

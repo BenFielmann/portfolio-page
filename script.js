@@ -38,6 +38,8 @@ for (var i = 2; i <= 6; i++) {
         });
         // Zielabschnitt anzeigen
         targetSection.style.opacity = "1";
+        // Aktiven Button markieren
+        markActiveButton(index);
         // Ausgewählten Abschnitt in der SessionStorage speichern
         saveSelectedSection(index);
       };
@@ -53,6 +55,8 @@ document.getElementById("homeButton").addEventListener("click", function () {
   });
   // Startabschnitt anzeigen (Section 1)
   document.getElementById("section1").style.opacity = "1";
+  // Aktiven Button markieren
+  markActiveButton(0);
   // Ausgewählten Abschnitt in der SessionStorage löschen
   sessionStorage.removeItem("selectedSection");
 });
@@ -60,22 +64,42 @@ document.getElementById("homeButton").addEventListener("click", function () {
 // Beim Laden der Seite den ausgewählten Abschnitt aus der SessionStorage laden
 loadSelectedSection();
 
+// Funktion zur Markierung des aktiven Buttons
+function markActiveButton(index) {
+  // Alle Buttons auf den normalen Stil zurücksetzen
+  var buttons = document.querySelectorAll(".side_buttons");
+  buttons.forEach(function (button) {
+    button.classList.remove("active_button");
+  });
+
+  // Den ausgewählten Button markieren
+  buttons[index].classList.add("active_button");
+}
+
 // Impressum-Modal
-var modalImp = document.getElementById("myImpressumModal");
-var btnImp = document.getElementById("myImpressumBtn");
-var spanImp = document.getElementById("impressum_close");
+const openModalBtn = document.getElementById("openModalBtn");
+const closeModalBtn = document.getElementById("closeModalBtn");
+const modal = document.getElementById("modal");
 
-btnImp.onclick = function () {
-  modalImp.style.display = "flex";
-  modalImp.style.justifyContent = "center";
-};
+openModalBtn.addEventListener("click", () => {
+  modal.style.display = "block";
+  setTimeout(() => {
+    modal.classList.add("open");
+  }, 10);
+});
 
-spanImp.onclick = function () {
-  modalImp.style.display = "none";
-};
+closeModalBtn.addEventListener("click", () => {
+  modal.classList.remove("open");
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 300);
+});
 
-window.onclick = function (event) {
-  if (event.target == modalImp) {
-    modalImp.style.display = "none";
+modal.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.classList.remove("open");
+    setTimeout(() => {
+      modal.style.display = "none";
+    }, 300);
   }
-};
+});
