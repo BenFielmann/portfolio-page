@@ -9,7 +9,13 @@
     ),
     linear-gradient(0deg, #e3e3e3, #e3e3e3);
 
-  --global-text-color: #e3e3e3;
+  --global-primary-text-color: #000000;
+
+  --global-primary-color: #ffffff;
+
+  --global-secondary-color: #9e9e9e;
+
+  --global-accent-color: greenyellow;
 
   --global-primary-font-family: Roboto;
 
@@ -17,9 +23,9 @@
 
   --global-font-size: 1em;
 
-  --global-menu-font-size: 1rem;
+  --global-secondary-font-size: 1.2rem;
 
-  --global-footer-font-size: 1rem;
+  --global-footer-font-size: 0.8rem;
 }
 
 @font-face {
