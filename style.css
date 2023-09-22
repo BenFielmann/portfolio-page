@@ -123,8 +123,8 @@ footer div {
 
 /* CSS-Regel für das hovern der Social Icons */
 .social_icon {
-  width: 18.65px;
-  height: 20px;
+  width: 20.52px;
+  height: 22px;
   fill: var(--global-secondary-color);
   transition: fill 0.3s ease;
 }
