@@ -82,7 +82,7 @@ header {
   border: none;
   transition: color 0.3s; /* Übergangseffekt für die Textfarbe */
   font-family: var(--global-secondary-font-family);
-  font-size: var(--global-font-size);
+  font-size: var(--global-Btn-font-size);
   font-weight: lighter;
   letter-spacing: 0.5pt;
 }
@@ -133,14 +133,17 @@ footer div {
   fill: var(--global-accent-color);
 }
 
-footer p {
+/* CSS-Regel für den Credits Modal Button */
+.credits_Btn {
   margin: 0.6rem 0 0.6rem 0;
   color: var(--global-secondary-color);
-  font-size: var(--global-footer-font-size);
+  font-size: 0.6rem;
+  letter-spacing: 1pt;
 }
 
-footer button {
+.imp_Btn {
   margin-bottom: 0.6rem;
+  letter-spacing: 1pt;
 }
 
 /* CSS-Regel für das Modal */
@@ -211,6 +214,7 @@ footer button {
 }
 
 .modal.open {
+  z-index: 99;
   height: 100%;
 }
 
@@ -260,10 +264,9 @@ section {
 
 /* Section1 */
 #section1 {
-  background-image: url(/img/frauenhand-praesentiert-futuristischen-technologie-digital-remix.jpg);
+  background-image: url(/img/frauenhand-praesentiert-futuristischen-technologie-digital-remix-right.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
