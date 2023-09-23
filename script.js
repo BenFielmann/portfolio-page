@@ -154,3 +154,35 @@ modal.addEventListener("click", (event) => {
     }, 300);
   }
 });
+
+// Credential-Modal
+const open_credits_Modal_Btn = document.getElementById(
+  "open_credits_Modal_Btn"
+);
+const close_credits_Modal_Btn = document.getElementById(
+  "close_credits_Modal_Btn"
+);
+const credits_modal = document.getElementById("credits_modal");
+
+open_credits_Modal_Btn.addEventListener("click", () => {
+  credits_modal.style.display = "block";
+  setTimeout(() => {
+    credits_modal.classList.add("open");
+  }, 10);
+});
+
+close_credits_Modal_Btn.addEventListener("click", () => {
+  credits_modal.classList.remove("open");
+  setTimeout(() => {
+    credits_modal.style.display = "none";
+  }, 300);
+});
+
+credits_modal.addEventListener("click", (event) => {
+  if (event.target === credits_modal) {
+    credits_modal.classList.remove("open");
+    setTimeout(() => {
+      credits_modal.style.display = "none";
+    }, 300);
+  }
+});
