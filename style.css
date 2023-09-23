@@ -301,18 +301,43 @@ section {
 
 #section2 {
   background-color: rgba(19, 68, 19, 0.564);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #section3 {
   background-color: rgba(10, 10, 63, 0.565);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #section4 {
   background-color: rgba(75, 21, 21, 0.808);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #section5 {
   background-color: rgba(87, 74, 22, 0.775);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #section6 {
   background-color: rgba(36, 83, 86, 0.88);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* CSS-Helper-Regeln */
