@@ -36,16 +36,15 @@ header {
 }
 
 .selfie_frame {
-  overflow: hidden;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  background-repeat: no-repeat;
   width: inherit;
   height: 14rem;
-  background-position-y: bottom;
-  background-size: 100% auto;
   background-image: url(Selfie.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
 }
 
 .selfie_frame h2 {
@@ -261,18 +260,18 @@ section {
 
 /* Section1 */
 #section1 {
-  background-image: url(/img/sdgff1.jpg);
-  background-size: auto auto;
-  overflow: visible;
-  font-family: var(--global-secondary-font-family);
-  height: 100%;
+  background-image: url(/img/frauenhand-praesentiert-futuristischen-technologie-digital-remix.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
   color: var(--global-accent-color);
+  font-family: var(--global-secondary-font-family);
   font-size: xx-large;
-  background-repeat: no-repeat;
 }
 
 .i_m_home {
