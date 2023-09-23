@@ -248,7 +248,7 @@ section {
   opacity: 0; /* Standardmäßig alle Sections ausblenden */
   color: white;
   font-size: var(--global-secondary-font-size);
-  text-align: center;
+  /* text-align: center; */
   width: inherit;
   height: 100%;
   transition: opacity 1s ease-in-out; /* Übergangseffekt: 1 Sekunde, sanftes Ein- und Ausblenden */
@@ -257,12 +257,48 @@ section {
   opacity: 1; /* Klasse 'visible' zeigt den Abschnitt an */
 }
 
-/* Farben für die Sections */
+/* Styling für die switch Sections */
+
+/* Section1 */
 #section1 {
-  background: var(--global-color-background);
+  background-image: url(/img/sdgff1.jpg);
+  background-size: auto auto;
+  overflow: visible;
+  font-family: var(--global-secondary-font-family);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--global-accent-color);
+  font-size: xx-large;
   background-repeat: no-repeat;
-  /* background-color: #353638; */
 }
+
+.i_m_home {
+  display: inline-block;
+  padding-right: 4.5rem;
+}
+
+.job_container {
+  height: 10%;
+  display: flex;
+  width: 330px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Verhindert das Überlaufen des Textes */
+}
+
+.job_container p {
+  font-size: x-large;
+  width: 0; /* Beginne mit einer Breite von 0 */
+  white-space: nowrap; /* Text nicht umbrechen */
+  overflow: hidden; /* Verstecke den überlaufenden Text */
+  transition: width 1s ease-in-out; /* Übergangseffekt für die Breite */
+}
+
+/* Section1 Ende___________________________*/
+
 #section2 {
   background-color: rgba(19, 68, 19, 0.564);
 }
