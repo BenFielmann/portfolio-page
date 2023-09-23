@@ -70,7 +70,6 @@ document.getElementById("homeButton").addEventListener("click", function () {
 // Beim Laden der Seite den ausgewählten Abschnitt aus der SessionStorage laden
 loadSelectedSection();
 
-
 // ____________
 // // Home Section text switch
 
