@@ -285,7 +285,7 @@ section {
 .job_container {
   height: 10%;
   display: flex;
-  width: 330px;
+  max-width: 25rem;
   justify-content: center;
   align-items: center;
   overflow: hidden; /* Verhindert das Überlaufen des Textes */
