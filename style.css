@@ -95,8 +95,8 @@ header {
   color: var(--global-accent-color);
 }
 
-/* CSS-Regel für den footer */
-footer {
+/* CSS-Regel für den header foot */
+.header-foot {
   font-family: var(--global-primary-font-family);
   display: flex;
   flex-direction: column;
@@ -114,7 +114,7 @@ footer {
   cursor: pointer;
 }
 
-footer div {
+.header-foot div {
   width: inherit;
   display: flex;
   justify-content: space-evenly;
@@ -343,6 +343,9 @@ section {
 }
 
 /* CSS-Helper-Regeln */
+footer {
+  display: none;
+}
 /* __________________________________________________________ */
 
 /* CSS-Regeln für links */
