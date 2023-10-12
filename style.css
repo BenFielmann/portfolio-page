@@ -454,3 +454,16 @@ a:active {
   text-decoration: underline;
   /* selected link */
 }
+
+#test:link {
+  text-decoration: none;
+}
+#test:visited {
+  text-decoration: none;
+}
+#test:hover {
+  text-decoration: none;
+}
+#test:active {
+  text-decoration: none;
+}
