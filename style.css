@@ -47,7 +47,7 @@ header {
   background-position-y: bottom;
 }
 
-.selfie_frame h2 {
+.selfie_frame h1 {
   font-weight: lighter;
   font-size: var(--global-secondary-font-size);
   font-family: var(--global-secondary-font-family);
@@ -260,7 +260,10 @@ section {
   opacity: 1; /* Klasse 'visible' zeigt den Abschnitt an */
 }
 
-/* Styling für die switch Sections */
+h2 {
+  margin: 1.5rem 0 0.2rem 0;
+  font-size: 2rem;
+}
 
 /* Section1 */
 #section1 {
