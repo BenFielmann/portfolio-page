@@ -260,13 +260,16 @@ section {
   opacity: 1; /* Klasse 'visible' zeigt den Abschnitt an */
 }
 
+/* Styling for switch Sections Start */
+
 h2 {
   margin: 1.5rem 0 0.2rem 0;
   font-size: 2rem;
 }
 
-/* Section1 */
+/* ___---___---___---Home Start---___---___---___ */
 #section1 {
+  /* home */
   background-image: url(/img/hand-mit-orbs-min.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -302,25 +305,35 @@ h2 {
   transition: width 1s ease-in-out; /* Übergangseffekt für die Breite */
 }
 
-/* Section1 Ende___________________________*/
+/* ___---___---___---Home End---___---___---___ */
 
+/* ___---___---___---Aboute me Start---___---___---___ */
 #section2 {
-  background-color: rgba(19, 68, 19, 0.564);
+  /* aboute me */
+  background-color: rgba(8, 21, 8, 0.941);
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+/* ___---___---___---Aboute me End---___---___---___ */
+
+/* ___---___---___---Resume Start---___---___---___ */
 #section3 {
-  background-color: rgba(10, 10, 63, 0.565);
+  /* resume */
+  background-color: rgba(33, 0, 24, 0.962);
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+/* ___---___---___---Resume End---___---___---___ */
+
+/* ___---___---___---Portfolio Start---___---___---___ */
 #section4 {
+  /* portfolio */
   background: var(--global-color-background);
   height: 100%;
   display: flex;
@@ -331,6 +344,7 @@ h2 {
   font-family: var(--global-secondary-font-family);
   font-size: xx-large;
 }
+/* ___---___---___---Gallery Start---___---___---___ */
 .gallery-box {
   overflow: hidden;
   scroll-behavior: smooth;
@@ -378,25 +392,39 @@ h2 {
     max-width: 100%;
   }
 }
+/* ___---___---___---Gallery End---___---___---___ */
+/* ___---___---___---Portfolio End---___---___---___ */
+
+/* ___---___---___---Blog Start---___---___---___ */
 #section5 {
-  background-color: rgba(87, 74, 22, 0.775);
+  /* blog */
+  background-color: rgb(24, 20, 0);
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+/* ___---___---___---Blog End---___---___---___ */
+
+/* ___---___---___---Contact Start---___---___---___ */
 #section6 {
-  background-color: rgba(36, 83, 86, 0.88);
+  /* contat */
+  background-color: rgb(1, 6, 31);
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+/* ___---___---___---Contact End---___---___---___ */
+/* Styling for switch Sections End */
 
 /* CSS-Helper-Regeln */
-footer {
+.color1 {
+  color: aliceblue;
+}
+.display-none {
   display: none;
 }
 /* __________________________________________________________ */
