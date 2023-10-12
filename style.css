@@ -41,7 +41,7 @@ header {
   justify-content: center;
   width: inherit;
   height: 14rem;
-  background-image: url(Selfie.jpg);
+  background-image: url(/img/Selfie-min.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: bottom;
@@ -264,7 +264,7 @@ section {
 
 /* Section1 */
 #section1 {
-  background-image: url(/img/hand-mit-orbs.jpg);
+  background-image: url(/img/hand-mit-orbs-min.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
