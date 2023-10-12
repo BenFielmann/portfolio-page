@@ -321,12 +321,16 @@ h2 {
   align-items: center;
 }
 #section4 {
-  background-color: rgba(75, 21, 21, 0.808);
+  background: var(--global-color-background);
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: var(--global-accent-color);
+  font-family: var(--global-secondary-font-family);
+  font-size: xx-large;
+}
 .gallery-box {
   overflow: hidden;
   scroll-behavior: smooth;
