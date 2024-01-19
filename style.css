@@ -36,19 +36,18 @@ header {
 }
 
 .selfie_frame {
-  overflow: hidden;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  background-repeat: no-repeat;
   width: inherit;
   height: 14rem;
+  background-image: url(/img/Selfie-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position-y: bottom;
-  background-size: 100% auto;
-  background-image: url(Selfie.jpg);
 }
 
-.selfie_frame h2 {
+.selfie_frame h1 {
   font-weight: lighter;
   font-size: var(--global-secondary-font-size);
   font-family: var(--global-secondary-font-family);
@@ -83,7 +82,7 @@ header {
   border: none;
   transition: color 0.3s; /* Übergangseffekt für die Textfarbe */
   font-family: var(--global-secondary-font-family);
-  font-size: var(--global-font-size);
+  font-size: var(--global-Btn-font-size);
   font-weight: lighter;
   letter-spacing: 0.5pt;
 }
@@ -96,8 +95,8 @@ header {
   color: var(--global-accent-color);
 }
 
-/* CSS-Regel für den footer */
-footer {
+/* CSS-Regel für den header foot */
+.header-foot {
   font-family: var(--global-primary-font-family);
   display: flex;
   flex-direction: column;
@@ -115,7 +114,7 @@ footer {
   cursor: pointer;
 }
 
-footer div {
+.header-foot div {
   width: inherit;
   display: flex;
   justify-content: space-evenly;
@@ -134,14 +133,17 @@ footer div {
   fill: var(--global-accent-color);
 }
 
-footer p {
+/* CSS-Regel für den Credits Modal Button */
+.credits_Btn {
   margin: 0.6rem 0 0.6rem 0;
   color: var(--global-secondary-color);
-  font-size: var(--global-footer-font-size);
+  font-size: 0.6rem;
+  letter-spacing: 1pt;
 }
 
-footer button {
+.imp_Btn {
   margin-bottom: 0.6rem;
+  letter-spacing: 1pt;
 }
 
 /* CSS-Regel für das Modal */
@@ -212,6 +214,7 @@ footer button {
 }
 
 .modal.open {
+  z-index: 99;
   height: 100%;
 }
 
@@ -248,38 +251,183 @@ section {
   opacity: 0; /* Standardmäßig alle Sections ausblenden */
   color: white;
   font-size: var(--global-secondary-font-size);
-  text-align: center;
+  /* text-align: center; */
   width: inherit;
   height: 100%;
   transition: opacity 1s ease-in-out; /* Übergangseffekt: 1 Sekunde, sanftes Ein- und Ausblenden */
 }
 .visible {
-  opacity: 1; /* Klasse 'visible' zeigt den Abschnitt an */
+  opacity: 1; /* Klasse 'visible' shows the first section on first visit */
+  z-index: 1; /* Section1 'visible' to make shure the first section is on top by first visit */
 }
 
-/* Farben für die Sections */
+/* Styling for switch Sections Start */
+
+h2 {
+  margin: 1.5rem 0 0.2rem 0;
+  font-size: 2rem;
+}
+
+/* ___---___---___---Home Start---___---___---___ */
 #section1 {
-  background: var(--global-color-background);
+  /* home */
+  background-image: url(/img/hand-mit-orbs-min.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
-  /* background-color: #353638; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: var(--global-accent-color);
+  font-family: var(--global-secondary-font-family);
+  font-size: xx-large;
 }
+
+.i_m_home {
+  display: inline-block;
+  padding-right: 4.5rem;
+}
+
+.job_container {
+  height: 10%;
+  display: flex;
+  max-width: 25rem;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Verhindert das Überlaufen des Textes */
+}
+
+.job_container p {
+  font-size: x-large;
+  width: 0; /* Beginne mit einer Breite von 0 */
+  white-space: nowrap; /* Text nicht umbrechen */
+  overflow: hidden; /* Verstecke den überlaufenden Text */
+  transition: width 1s ease-in-out; /* Übergangseffekt für die Breite */
+}
+
+/* ___---___---___---Home End---___---___---___ */
+
+/* ___---___---___---Aboute me Start---___---___---___ */
 #section2 {
-  background-color: rgba(19, 68, 19, 0.564);
+  /* aboute me */
+  background-color: rgba(8, 21, 8, 0.941);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+/* ___---___---___---Aboute me End---___---___---___ */
+
+/* ___---___---___---Resume Start---___---___---___ */
 #section3 {
-  background-color: rgba(10, 10, 63, 0.565);
+  /* resume */
+  background-color: rgba(33, 0, 24, 0.962);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+/* ___---___---___---Resume End---___---___---___ */
+
+/* ___---___---___---Portfolio Start---___---___---___ */
 #section4 {
-  background-color: rgba(75, 21, 21, 0.808);
+  /* portfolio */
+  background: var(--global-color-background);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--global-accent-color);
+  font-family: var(--global-secondary-font-family);
+  font-size: xx-large;
 }
+/* ___---___---___---Gallery Start---___---___---___ */
+.gallery-box {
+  overflow: hidden;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  height: 100vh;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* ___---___---___---Gallery End---___---___---___ */
+/* ___---___---___---Portfolio End---___---___---___ */
+
+/* ___---___---___---Blog Start---___---___---___ */
 #section5 {
-  background-color: rgba(87, 74, 22, 0.775);
+  /* blog */
+  background-color: rgb(24, 20, 0);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+/* ___---___---___---Blog End---___---___---___ */
+
+/* ___---___---___---Contact Start---___---___---___ */
 #section6 {
-  background-color: rgba(36, 83, 86, 0.88);
+  /* contat */
+  background-color: rgb(1, 6, 31);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+/* ___---___---___---Contact End---___---___---___ */
+/* Styling for switch Sections End */
 
 /* CSS-Helper-Regeln */
+.color1 {
+  color: aliceblue;
+}
+.display-none {
+  display: none;
+}
 /* __________________________________________________________ */
 
 /* CSS-Regeln für links */
@@ -305,4 +453,17 @@ a:active {
   color: var(--global-secondary-color);
   text-decoration: underline;
   /* selected link */
+}
+
+#test:link {
+  text-decoration: none;
+}
+#test:visited {
+  text-decoration: none;
+}
+#test:hover {
+  text-decoration: none;
+}
+#test:active {
+  text-decoration: none;
 }
