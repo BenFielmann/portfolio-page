@@ -257,8 +257,7 @@ section {
   transition: opacity 1s ease-in-out; /* Übergangseffekt: 1 Sekunde, sanftes Ein- und Ausblenden */
 }
 .visible {
-  opacity: 1; /* Klasse 'visible' shows the first section on first visit */
-  z-index: 1; /* Section1 'visible' to make shure the first section is on top by first visit */
+  opacity: 1; /* Klasse 'visible' zeigt den Abschnitt an */
 }
 
 /* Styling for switch Sections Start */
@@ -453,17 +452,4 @@ a:active {
   color: var(--global-secondary-color);
   text-decoration: underline;
   /* selected link */
-}
-
-#test:link {
-  text-decoration: none;
-}
-#test:visited {
-  text-decoration: none;
-}
-#test:hover {
-  text-decoration: none;
-}
-#test:active {
-  text-decoration: none;
 }
